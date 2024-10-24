@@ -19,6 +19,5 @@ class AndExampleFlow(Flow):
         print(self.state)
 
 
-
 flow = AndExampleFlow()
 flow.kickoff()

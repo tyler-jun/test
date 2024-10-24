@@ -43,6 +43,7 @@ class ExampleFlow(Flow):
         fun_fact = response["choices"][0]["message"]["content"]
         return fun_fact
 
+
 flow = ExampleFlow()
 result = flow.kickoff()
 

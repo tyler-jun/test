@@ -30,6 +30,7 @@ class StructuredExampleFlow(Flow[ExampleState]):
 
         print(f"State after third_method: {self.state}")
 
+
 flow = StructuredExampleFlow()
 flow.kickoff()
 

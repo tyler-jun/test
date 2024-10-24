@@ -7,7 +7,7 @@ class UntructuredExampleFlow(Flow):
     def first_method(self):
         print("Starting flow")
         print(f"State before first_method:\n{self.state}")
-        self.state["message"] = "Hello from structured flow"
+        self.state["message"] = "Hello from unstructured flow"
         self.state["counter"] = 0
 
     @listen(first_method)
@@ -23,6 +23,7 @@ class UntructuredExampleFlow(Flow):
         self.state["counter"] += 1
 
         print(f"State after third_method: {self.state}")
+
 
 flow = UntructuredExampleFlow()
 flow.kickoff()

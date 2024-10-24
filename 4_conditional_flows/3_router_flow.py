@@ -31,5 +31,6 @@ class RouterFlow(Flow[ExampleState]):
     def fourth_method(self):
         print("Fourth method running")
 
+
 flow = RouterFlow()
-flow.plot()
+flow.kickoff()
